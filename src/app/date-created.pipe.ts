@@ -5,8 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class DateCreatedPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: any) {
+      // THIS CALCULATES THE CURRENT DATE AND TIME //
+    let currentYear: any = new Date().getFullYear();
+    let yearDifference = (currentYear - parseInt(value));
+    return yearDifference;
   }
 
 }
