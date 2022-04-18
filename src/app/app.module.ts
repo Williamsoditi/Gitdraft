@@ -7,6 +7,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AboutComponent } from './about/about.component';
 import { UsersComponent } from './users/users.component';
 import { RepoComponent } from './repo/repo.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { RepoComponent } from './repo/repo.component';
     NavBarComponent,
     AboutComponent,
     UsersComponent,
-    RepoComponent
+    RepoComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
