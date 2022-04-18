@@ -11,6 +11,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DateCreatedPipe } from './date-created.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { UserSearchComponent } from './user-search/user-search.component';
+import { RepoSearchComponent } from './repo-search/repo-search.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HighlightDirective } from './highlight.directive';
     RepoComponent,
     NotFoundComponent,
     DateCreatedPipe,
-    HighlightDirective
+    HighlightDirective,
+    UserSearchComponent,
+    RepoSearchComponent
   ],
   imports: [
     BrowserModule,

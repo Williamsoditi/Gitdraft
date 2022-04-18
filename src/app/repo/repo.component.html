@@ -12,7 +12,7 @@
         <p><strong><span>Creation Date: </span></strong>&nbsp;{{repo.created_at | dateCreated}}</p>
         <div class="row text-center">
             <div class="col-sm-4">
-                <button class="btn btn-sm bg-info profile"><a href="{{repo.html_url}}"></a>Check Out</button>
+                <a href="{{repo.html_url}}" target="_blank"><button class="btn btn-sm bg-info profile">Check Out</button></a>
             </div>
             <div class="col-sm-4">
                 <p><strong><span>Forks :</span></strong>&nbsp;{{repo.forks}}</p>
