@@ -26,8 +26,8 @@ export class MainService {
     return this.http.get<User>(`https://api.github.com/users/${username}?client_id=${environment.clientId}&client_secret=${environment.apiKey}`);
   }
 
-  repositoryRequest (username:string):Observable<Array<Repo>> {
-    return this.http.get<Array<Repo>>(`https://api.github.com/users/${username}?client_id=${environment.clientId}&client_secret=${environment.apiKey}`)
+  repoRequest (username:string):Observable<Array<Repo>> {
+    return this.http.get<Array<Repo>>(`https://api.github.com/users/${username}/repos?client_id=${environment.clientId}&client_secret=${environment.apiKey}`)
   }
 
   repoGet (repoName:string): Observable<Array<Repo>> {

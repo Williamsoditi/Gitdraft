@@ -11,7 +11,7 @@
             <p *ngIf="user.login"><strong><span>Profile Name : &nbsp;</span></strong>{{user.login}}.</p>
             <p *ngIf="user.bio"><strong><span>Bio : &nbsp;</span></strong>{{user.bio}}.</p>
             <p *ngIf="user.public_repos"><strong><span>Public repositories : &nbsp;</span></strong>{{user.public_repos}}&nbsp;repositories</p>
-            <p *ngIf="user.created_at"><strong><span>Inception Date : &nbsp;</span></strong>{{user.created_at| date}}.</p>
+            <p *ngIf="user.created_at"><strong><span>Inception Date : &nbsp;</span></strong>{{user.created_at| dateCreated}}.</p>
             <div class="row">
                 <div class="col-sm-6">
                     <p *ngIf="user.followers" class="text-center"><strong><span>Followers : &nbsp;</span></strong>{{user.followers}}.</p>

@@ -12,13 +12,14 @@ export class RepoComponent implements OnInit {
 
   constructor(public repoService:MainService, public userService:MainService) { }
 
-  repositoryRequest(username:any){
-    this.repoService.repositoryRequest(username).subscribe(res => {
+  repoSearch(username:any){
+    this.repoService.repoRequest(username).subscribe(res => {
       this.repository = res;
     });
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.repoSearch('Williamsoditi');
   }
 
 }

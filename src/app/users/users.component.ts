@@ -10,21 +10,21 @@ import { MainService } from '../main.service';
 })
 export class UsersComponent implements OnInit {
 
-  repo!: Array<Repo>;
+  repository!: Array<Repo>;
   user!: User;
   
   constructor(public repoService:MainService, public userService:MainService) { }
 
-  searchquerry(username: any) {
+  searchquery(username: any) {
     this.userService.profileRequest(username).subscribe(res => {
       this.user = res;
     });
-    this.repoService.repositoryRequest(username).subscribe(res => {
-      this.repo = res;
+    this.repoService.repoRequest(username).subscribe(res => {
+      this.repository = res;
     })
   }
 
   ngOnInit(): void {
-    this.searchquerry('Williamsoditi')
+    this.searchquery('Williamsoditi');
   }
 }
