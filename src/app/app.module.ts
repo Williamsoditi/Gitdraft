@@ -10,6 +10,7 @@ import { RepoComponent } from './repo/repo.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DateCreatedPipe } from './date-created.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { DateCreatedPipe } from './date-created.pipe';
     UsersComponent,
     RepoComponent,
     NotFoundComponent,
-    DateCreatedPipe
+    DateCreatedPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
