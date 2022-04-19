@@ -1,13 +1,20 @@
 <!-- <p>user-search works!</p> -->
 <div class="container">
-    <h4 class="text-center pt-3">Search For A User Now</h4>
+    <div class="row mt-4">
+        <div class="col-sm-8">
+            <h4 class="text-center">Search Now</h4>
+        </div>
+        <div class="col-sm-4">
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your username" formControlName="username">&nbsp;
+                    <button class="btn btn-success btn-sm profile">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
     <hr>
     <div>
-        <form>
-            <div class="form-group">
-                <input type="text" placeholder="Enter your username" formControlName="username">
-            </div>
-            <button class="btn btn-success btn-sm mt-3 profile">Search Here</button>
-        </form>
+        
     </div>
 </div>
