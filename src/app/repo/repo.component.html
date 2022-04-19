@@ -3,11 +3,11 @@
   <hr>
   <div class="card mb-3" *ngFor="let repo of repository">
     <div class="card-header">
-        <h4>{{ repo.name }}</h4>
+        <h4 appHighlight>{{ repo.name }}</h4>
     </div>
     <div class="card-body">
         <p><strong><span>Description :</span></strong>&nbsp;{{repo.description}}</p>
-        <p><strong><a href="{{repo.homepage}}">Click HERE</a></strong></p>
+        <p><strong><a href="{{repo.homepage}}" target="_blank">Click HERE</a></strong></p>
         <p><strong><span>Languages used: </span></strong>&nbsp;{{repo.language}}</p>
         <p><strong><span>Creation Date: </span></strong>&nbsp;{{repo.created_at | dateCreated}}</p>
         <div class="row text-center">
