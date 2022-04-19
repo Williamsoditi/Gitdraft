@@ -34,11 +34,15 @@
                     <p *ngIf="userProfile.following" class="text-center"><strong><span>Following : &nbsp;</span></strong>{{userProfile.following}}.</p>
                 </div>
             </div>
-
-
-
-
-
+            <p *ngIf="userProfile.location"><strong><span>Current Location : &nbsp;</span></strong>{{userProfile.location}}.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <a href="{{userProfile.html_url}}" target="_blank"><button class="btn bg-primary text-white profile">View Profile</button></a>
+                </div>
+                <div class="col-sm-6">
+                    <button class="float-end btn bg-dark text-white">Explore More</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
