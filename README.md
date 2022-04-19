@@ -15,7 +15,7 @@ This is an application that allows a user to search for github users and have th
 ## Project Resources
 The following is a live link to the project's site
 
-Link : ``
+Link : `https://williamsoditi.github.io/Gitdraft/`
 ## Installation
 **Requirements**
 + An access to the internet
