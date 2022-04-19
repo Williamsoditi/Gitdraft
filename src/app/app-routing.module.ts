@@ -13,9 +13,9 @@ const routes: Routes = [
   { path: 'users', component: UsersComponent },
   { path: 'user-search', component: UserSearchComponent},
   { path: 'repo-search', component: RepoSearchComponent},
+  { path: '', redirectTo:"../app/user-search", pathMatch:"full"},
   { path: '**', component: NotFoundComponent},
 
-  { path: '', redirectTo:"../app/user-search", pathMatch:"full"},
 ];
 
 @NgModule({
